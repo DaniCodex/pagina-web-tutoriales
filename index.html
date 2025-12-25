@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaniCodex - Tutoriales de Programación</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="imgs/logo-danicodex-animado.png" type="image/png">
+</head>
+<body>
+
+    <header>
+        <h1 class="brand-name">DaniCodex</h1>
+        <div class="social-icons">
+            <a href="https://www.youtube.com/@danicodex" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/danicodex/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/DaniCodex" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <p>
+            ¡Bienvenido a mi página de tutoriales web! Aquí encontrarás una lista de proyectos de programación y tutoriales.
+            Cada tarjeta contiene enlaces al video en YouTube, una demo para probar el resultado y el repositorio de GitHub con el código fuente.
+        </p>
+        <p class="highlight-text">
+            💻 En el futuro, estaré incluyendo mas cursos y ejercicios de desarrollo web. 
+            ¿Quieres mantenerte actualizado? <a href="https://www.youtube.com/@danicodex">¡Suscríbete Ahora!</a>
+        </p>
+        <p class="support-text">
+            ⭐ Si disfrutas los tutoriales y quieres apoyar mi trabajo, <a href="https://www.paypal.com/donate/?hosted_button_id=3X6NV69DTXGZE">puedes hacerlo aquí ❤️</a>
+        </p>
+        <p class="last-updated">
+            Última actualización: <span id="fecha-dinamica">Diciembre 26, 2025</span>
+        </p>
+    </section>
+
+    <nav class="category-nav">
+
+        <div class="buttons-container">
+            <button class="filter-btn active" onclick="filterVideos('cursos')">Cursos de Programación</button>
+            <button class="filter-btn" onclick="filterVideos('programaSuCorazon')">Programa su corazón</button>
+            <button class="filter-btn" onclick="filterVideos('')"> </button>
+        </div>
+    </nav>
+
+    <main class="projects-container" id="projects-grid">
+        
+        <article class="project-card" data-category="cursos">
+            <div class="thumbnail">
+                <img src="imgs/portada-pseint.png" alt="Music Player">
+            </div>
+            <h3>💛 CURSO DE PSEINT DESDE CERO 2025 - 2026</h3>
+            <div class="links">
+                <a href="https://youtube.com/playlist?list=PLZmtYtnx3IcUR9P1pZ7VOWlzvizYB6EF-&si=dzs9S-_3mb3_mXJY" class="btn-link">Tutorial</a>
+            </div>
+        </article>
+
+        <article class="project-card" data-category="cursos">
+            <div class="thumbnail">
+                <img src="imgs/portada-python.png" alt="Portada curso python">
+            </div>
+            <h3>Aprende Python en 30 Días (Curso Completo)</h3>
+            <div class="links">
+                <a href="https://youtube.com/playlist?list=PLZmtYtnx3IcV8Be2ld0-vOwev5Hxw13ho&si=-MZwwpebXbItPdwj" class="btn-link">TUTORIAL</a>
+            </div>
+        </article>
+
+        <article class="project-card" data-category="cursos">
+            <div class="thumbnail">
+                <img src="imgs/html-curso.png" alt="portada-html">
+            </div>
+            <h3>🧡 CURSO DE HTML5 DESDE CERO ( un curso fuera de lo común)</h3>
+            <div class="links">
+                <a href="https://youtube.com/playlist?list=PLZmtYtnx3IcUTlaEly3oC6LMpJJ3SmT2-&si=JchN-y6hAkPhso71" class="btn-link">TUTORIAL</a>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>DaniCodex &copy; 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
